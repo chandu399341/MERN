@@ -52,12 +52,61 @@ console.log(~6); //Not
 console.log(6>>1);
 console.log(6<<1);
 
-//function
+//Function
 function add(a,b){
     console.log(a+b); 
 }
-add(2,4)
 
+//Arrow Function
+const sub=(a,b)=>{console.log(a-b)}
+
+//Multiplication using Arrow Function
+const mul=(a,b)=>{console.log(a*b)}
+
+//Callback: passing a function instead of parameters
+const cal=(a,b,fun)=>{
+    fun(a,b)
+}
+cal(4,3,add)
+ 
+//Looping: For in
+let num=[2,3,4,5,6,7,8]
+for(let i in num){
+    console.log(num[i]); // we can access both indexes and values
+    
+}
+
+
+//Looping: For of
+let num1=[2,3,4,5,6,7,8]
+for(let i of num){
+    console.log(i); //we can access only values
+    
+}
+
+
+//Object
+let num2=[2,3,4,5,6,7,8]
+let obj={
+    name:'abc',
+    city:'asd',
+    age:22
+}
+for(let index in obj){
+    console.log(obj[index]);
+    
+}
+
+//Optional chaining
+let num3=[2,3,4,5,6,7,8]
+let ob={
+    name:'abc',
+    state:{
+        city:'asd'
+    },
+    age:22
+}
+console.log(ob?.state?.city);
 
 
 
