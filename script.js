@@ -52,6 +52,12 @@ console.log(~6); //Not
 console.log(6>>1);
 console.log(6<<1);
 
+//function
+function add(a,b){
+    console.log(a+b); 
+}
+add(2,4)
+
 
 
 
